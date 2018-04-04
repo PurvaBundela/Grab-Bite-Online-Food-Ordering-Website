@@ -1,0 +1,181 @@
+#logo{
+  height:inherit;
+  width: 100%;
+}
+.navbar{
+  min-height:80px;
+}
+#searchbox{
+  width:400px;
+}
+.transparent {
+    background-color: transparent !important;
+    box-shadow: inset 0px 1px 0 rgba(0,0,0,.075);
+ }
+ .left-border-none {
+    border-left:none !important;
+    box-shadow: inset 0px 1px 0 rgba(0,0,0,.075);
+ }
+ #searchbtn{
+   background-color: #ff5c33;
+   font-weight: bold;
+   color:white;
+
+ }
+
+ #order{
+   background-color: #099E44;
+   font-weight: bold;
+   color:white;
+   margin-left: 150px;
+   margin-right: 0px;
+
+ }
+ #login{
+   background-color: rgb(254, 211, 48);
+   font-weight: bold;
+   color:white;
+   margin-left: 0px;
+
+ }
+ .row{
+   margin-top: 15px;
+ }	
+
+.container{
+		width:100%;
+	}
+  
+  .header p {
+	float:right;
+  }
+  
+  .header {
+	
+	margin-top:100px;
+	padding: 30px;
+	color:black;
+	text-align:center;
+  }
+
+.header_bg_img{
+background-size: cover;
+ }
+  
+  .well {
+	background-color:green;
+  }
+  #finalFooter{
+  background-color: #EF5350;
+  padding:5%;
+  color: white;
+}
+
+#section1 , #section2, #section3, #section4{
+  padding:0px;
+}
+#newsletter {
+      background-color: #f2f2f2;
+      padding: 25px;
+}
+
+  .icon {
+  width:140px;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.portfolioContainer{
+	margin-left:40px;
+}
+
+
+.sort{
+	width:140px;
+  max-width: 150px;
+  margin: 0 auto;
+  display: inline;
+  margin:10px;
+}
+
+
+.services section {
+  text-align: center;
+}
+
+
+.media-body p{
+	color:orange;
+}
+  
+  .liner{
+	text-align:center;
+  }
+  
+  .panel-heading {background-color:#C5E1A5;}
+  
+  body {
+    font-family: Arial;
+}
+ 
+.portfolioFilter a { 
+    margin-right: 10px; 
+    color:#666;
+    text-decoration:none;
+}
+ 
+.portfolioFilter a.current { 
+    font-weight:bold;
+}
+ 
+.isotope_images {
+    margin:5px;
+	width: 300px;
+	height: 300px;
+}
+
+
+.box {
+/* if not using border-box 
+width: 218px; 
+*/
+width: auto;
+background: #ffffff;
+border: 1px solid #999;
+padding: 15px;
+margin: 20px;
+float: left;
+
+-webkit-border-radius: 5px;
+border-radius: 5px;
+
+-webkit-box-shadow: 0px 0px 5px 1px #aaa;
+box-shadow: 0px 0px 5px 1px #aaa;
+}
+ 
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+ 
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}

@@ -1,0 +1,56 @@
+#logo{
+  height:inherit;
+  width: 100%;
+}
+.navbar{
+  min-height:80px;
+}
+#searchbox{
+  width:400px;
+}
+.transparent {
+    background-color: transparent !important;
+    box-shadow: inset 0px 1px 0 rgba(0,0,0,.075);
+ }
+ .left-border-none {
+    border-left:none !important;
+    box-shadow: inset 0px 1px 0 rgba(0,0,0,.075);
+ }
+ #searchbtn{
+   background-color: #ff5c33;
+   font-weight: bold;
+   color:white;
+
+ }
+
+ #order{
+   background-color: #099E44;
+   font-weight: bold;
+   color:white;
+   margin-left: 150px;
+   margin-right: 0px;
+
+ }
+ #login{
+   background-color: rgb(254, 211, 48);
+   font-weight: bold;
+   color:white;
+   margin-left: 0px;
+
+ }
+ .row{
+   margin-top: 15px;
+ }
+ #finalFooter{
+  background-color: #EF5350;
+  padding:5%;
+  color: white;
+}
+
+#section1 , #section2, #section3, #section4{
+  padding:0px;
+}
+#newsletter {
+      background-color: #f2f2f2;
+      padding: 25px;
+}

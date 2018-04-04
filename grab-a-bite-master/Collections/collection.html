@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grab-a-bite</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="mycss.css">
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script src="js/jquery.isotope.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#loginOption">
+            <span class="glyphicon glyphicon-user"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html"><img class="img-responsive" src="images/logo_1.png" id="logo" alt="logo"></a>
+        </div>
+        <div class="row">
+        <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <div class="col-xs-5">
+      <div class="input-group">
+          <span class="input-group-addon transparent"><span class="glyphicon glyphicon-search"></span></span>
+          <input class="form-control left-border-none" id="searchbox" placeholder="Search for restaurants or cuisines.." type="text" name="search">
+      </div>
+
+    </div>
+      </div>
+      <button type="submit" class="btn btn-default" id="searchbtn" >Search</button>
+      <button  onclick="window.location.href='orderOnline.html'" type="submit" class="btn btn-default" id="order" >Order Online</button>
+      <button onclick="window.location.href='login.html'" type="submit" class="btn btn-default" id="login">User Login </button>
+
+    </form>
+
+        </div>
+      </div>
+    </nav>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--breadcrumb!-->
+
+  <h2>Collections</h2>
+
+  <hr>
+
+<div class="portfolioFilter">
+  <nav class="navbar navbar-default">
+ <div class="container-fluid">
+       <ul class="nav navbar-nav">
+  <li class="active"> <a href="#" data-filter="*" >All</a></li>
+  <li>  <a href="#" data-filter=".trending">Trending</a></li>
+  <li>  <a href="#" data-filter=".sports">Sports Bar</a></li>
+  <li>  <a href="#" data-filter=".pizza">Upper Crust</a></li>
+  <li>  <a href="#" data-filter=".rom">Romantic</a></li>
+</ul>
+</div>
+
+<div class="portfolioContainer">
+
+    <div class="box trending rom">
+        
+
+          <img src="images/trend1.png" alt="image" class="isotope_images">
+        <div class="topright">4.8</div>
+      <figcaption class="figure-caption">Top of the Hub.</figcaption>
+		<hr>
+		<table>
+			<tr>
+				<td>Back Bay
+				<button type="button" name="button" onclick="window.location.href='restaurant_theme_page/restaurant.html'">Details</button></td>
+        </tr>
+        <tr>
+          <td>New American,Seafood</td>
+			</tr>
+		</table>
+    </div>
+    <div class="box trending">
+        <img src="images/trend2.jpg" alt="image" class="isotope_images">
+        <div class="topright">4.4</div>
+		<figcaption class="figure-caption">Mirchi and Mime.</figcaption>
+		<hr>
+		<table>
+			<tr>
+				<td>Northend
+				<button type="button" name="button" onclick="window.location.href='Restaurant/restaurant.html'">Details</button></td>
+			</tr>
+        <tr>
+				<td>Italian</td>
+			</tr>
+		</table>
+    </div>
+    <div class="box trending sports">
+        <a href="#"><img src="images/trend4.jpg" alt="image" class="isotope_images"></a>
+      <div class="topright">3.8</div>
+		<figcaption class="figure-caption">The Capital Grille.</figcaption>
+		<hr>
+		<table>
+			<tr>
+				<td>Back Bay</td>
+        </tr>
+        <tr>
+				<td>Steak,American</td>
+			</tr>
+		</table>
+    </div>
+
+    <div class="box sports">
+        <a href="#"><img src="images/s1.jpg" alt="image" class="isotope_images"></a>
+<div class="topright">4.5</div>
+    <figcaption class="figure-caption">Cask n Flagon.</figcaption>
+    <hr>
+    <table>
+      <tr>
+        <td>Fenway</td>
+        </tr>
+        <tr>
+        <td>American</td>
+      </tr>
+    </table>
+    </div>
+    <div class="box sports pizza">
+        <a href="#"><img src="images/s2.jpg" alt="image" class="isotope_images"></a>
+      <div class="topright">4.1</div>
+    <figcaption class="figure-caption">Champions.</figcaption>
+    <hr>
+    <table>
+      <tr>
+        <td>Back Bay</td>
+        </tr>
+        <tr>
+        <td>American</td>
+      </tr>
+    </table>
+    </div>
+
+    <div class="box pizza">
+        <a href="#"><img src="images/p1.jpg" alt="image" class="isotope_images"></a>
+        <div class="topright">4.0</div>
+    <figcaption class="figure-caption">Coppa.</figcaption>
+    <hr>
+    <table>
+      <tr>
+        <td>SouthEnd</td>
+        </tr>
+        <tr>
+        <td>Italian</td>
+      </tr>
+    </table>
+    </div>
+    <div class="box pizza rom">
+        <a href="#"><img src="images/p2.jpg" alt="image" class="isotope_images"></a>
+        <div class="topright">3.5</div>
+    <figcaption class="figure-caption">Picco.</figcaption>
+    <hr>
+    <table>
+      <tr>
+        <td>South End</td>
+        </tr>
+        <tr>
+        <td>Italian</td>
+      </tr>
+    </table>
+    </div>
+
+    <div class="box rom">
+        <a href="#"><img src="images/r1.jpg" alt="image" class="isotope_images"></a>
+        <div class="topright">3.8</div>
+    <figcaption class="figure-caption">Eastern Standard.</figcaption>
+    <hr>
+    <table>
+      <tr>
+        <td>Fenway/Kenmore</td>
+        </tr>
+        <tr>
+        <td>American,Seafood</td>
+      </tr>
+    </table>
+    </div>
+    <div class="box rom">
+        <a href="#"><img src="images/r2.jpg" alt="image" class="isotope_images"></a>
+        <div class="topright">4.8</div>
+    <figcaption class="figure-caption">City Bar.</figcaption>
+    <hr>
+    <table>
+      <tr>
+        <td>Back Bay</td>
+        </tr>
+        <tr>
+        <td>American</td>
+      </tr>
+    </table>
+    </div>
+ </div>
+ </div>
+      <footer class="container-fluid" id="finalFooter">
+      <div class="container">
+        <div class="row">
+          <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+            <label>Get to know us</label>
+            <div class="container" id="section1">
+              <ul class="list-unstyled">
+                <li>About Food Hub</li>
+                <li>Careers</li>
+                <li>News</li>
+                <li>Terms and Conditions</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
+          </section>
+          <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+            <label>Useful links</label>
+            <div class="container" id="section2">
+              <ul class="list-unstyled">
+                 <li><a href ="feedback.html">Feedback</li>
+                <li><a href ="newform.html">Contact Us</li>
+              </ul>
+            </div>
+          </section>
+          <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+            <label>Connect with us</label>
+            <div class="container" id="section3">
+              <ul class="list-unstyled">
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://twitter.com/">Twitter</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+            <label>Partner with us</label>
+            <div class="container" id="section4">
+              <ul class="list-unstyled">
+                <li>For restaurants</li>
+                <li>For Corparate Accounts</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+
+<script type="text/javascript">
+
+ $(window).on('load', function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+
+    $('.portfolioFilter a').on('click',function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    });
+});
+
+
+</script>
+
+</body>
+</html>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<!-- or -->
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>

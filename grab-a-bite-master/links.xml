@@ -1,0 +1,28 @@
+<pages>
+<link>
+<title>Breakfast</title>
+<url>quicksearch/menu.html.html</url>
+</link>
+<link>
+<title>Lunch</title>
+<url>quicksearch/menu.html</url>
+</link>
+<link>
+<title>Burrito</title>
+<url>
+Collections/restaurant_theme_page/restaurant.html
+</url>
+</link>
+<link>
+<title>Mirchi and Mine</title>
+<url>http://www.w3schools.com/cssref/pr_border.asp</url>
+</link>
+<link>
+<title>lemon tart</title>
+<url>page_name.html</url>
+</link>
+<link>
+<title>pastry</title>
+<url>http://www.w3schools.com/jsref/jsref_obj_array.asp</url>
+</link>
+</pages>

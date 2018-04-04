@@ -1,0 +1,27 @@
+#logo{
+  height: 35px;
+  width: 100px;
+  padding-bottom: 2%;
+}
+#mainSection1{
+  padding-top: 5%
+}
+.carousel-inner img {
+  margin: auto;
+}
+.carousel-caption h3 {
+    color: #fff !important;
+}
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+#finalFooter{
+  background-color: #EF5350;
+  padding:5%;
+  color: white;
+}
+#section1 , #section2, #section3, #section4{
+  padding:0px;
+}

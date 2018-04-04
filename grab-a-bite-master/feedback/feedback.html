@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Restaurant</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+  <script src="js/form.js"></script>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="icon" href="favicon-1.ico" type="image/x-icon">
+		 <script src="js/form.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+    </head>
+
+    <body >
+	
+
+         
+           <h1 style="margin-top:60px">Your FeedBack Please</h1>
+                    
+                    <div id='form_wrap' style="margin-left:300px;margin-top:200px" >
+			<form id="feedback-form">
+				<p>Hello,</p>
+				<label for="message">Your Message :<span>(required)</span></label>
+				<textarea  name="message" value="Your Message" id="message" required placeholder="Enter your comments" ></textarea>
+				<p>Best,</p>	
+				<label for="name">Name:<span>(required, atleast 5 characters)</span></label>
+				<input type="text" name="name" value="" id="name" minlength="5"  required placeholder="Enter your name"/>
+				<br></br>
+			
+				<label for="email">Email:<span>(required, valid email)</span></label>
+				<input type="email" name="email" value="" id="email" required placeholder="Enter email address"/>
+				<input class="submit" type="submit" name ="submit" value="Now, I send, thanks!" />
+			</form>
+		</div>
+	
+        
+  
+
+ 
+    </body>
+</html>

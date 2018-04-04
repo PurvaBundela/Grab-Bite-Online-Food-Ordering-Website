@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type='text/javascript'>
+var imageID=0;
+function changeimage(every_seconds){
+    //change the image
+    if(!imageID){
+        document.getElementById("myimage").src="images/blog4.jpg";
+        imageID++;
+    }
+    else{if(imageID==1){
+        document.getElementById("myimage").src="images/blog2.jpg";
+        imageID++;
+    }else{if(imageID==2){
+        document.getElementById("myimage").src="images/blog3.jpg";
+        imageID++;
+    }else{if(imageID==3){
+        document.getElementById("myimage").src="images/blog1.jpg";
+        imageID=0;
+    }}}}
+    //call same function again for x of seconds
+    setTimeout("changeimage("+every_seconds+")",((every_seconds)*1000));
+}
+</script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+	  margin-top:20px;
+
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+
+	.slideimg{
+	margin-top:50px;
+	}
+
+	.container{
+	margin-top:200px;}
+
+	.panel {
+
+    transition: padding 0.5s;
+    -moz-transition: padding 0.5s; /* Firefox 4 */
+    -webkit-transition: padding 0.5s; /* Safari and Chrome */
+    -o-transition: padding 0.5s; /* Opera */
+    -ms-transition:padding 0.5s; /* IE9 (maybe) */
+
+}
+
+.panel:hover {
+	padding:10px;
+}
+
+#picOne, #picTwo {
+
+display: none;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+  </style>
+</head>
+<body onload='changeimage(2)'>
+<div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#loginOption">
+              <span class="glyphicon glyphicon-user"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><img class="img-responsive" src="images/logo_1.png" id="logo" alt="logo"></a>
+          </div>
+          <div class="row">
+          <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <div class="col-xs-5">
+        <div class="input-group">
+            <span class="input-group-addon transparent"><span class="glyphicon glyphicon-search"></span></span>
+            <input class="form-control left-border-none" id="searchbox" placeholder="Search for restaurants or cuisines.." type="text" name="search">
+        </div>
+
+      </div>
+        </div>
+        <button type="submit" class="btn btn-default" id="searchbtn" >Search</button>
+        <button  onclick="window.location.href='orderOnline.html'" type="submit" class="btn btn-default" id="order" >Order Online</button>
+        <button onclick="window.location.href='login.html'" type="submit" class="btn btn-default" id="login">User Login </button>
+
+      </form>
+
+          </div>
+        </div>
+      </nav>
+
+</div>
+<div class="container-fluid" >
+
+<div class="slideimg" style='position:absolute;width:100%;height:100%;left:0px;top:0px;' align='center'><img width=100% height=auto id='myimage' src='images/blog4.jpg'/></div>
+</div>
+
+
+	<div class="container">
+		<div class="row" style="margin-top:180px;">
+				<div class="col-md-3">
+						<div class="panel panel-danger">
+								<div class="panel-heading">
+										<h3 class="text-center">FOOD BLOGS</h3>
+										<p class="text-center">Why not check our latest blogs?</p>
+								</div>
+
+								<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-calendar"></span> Unlimited Events
+										</li>
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-envelope"></span> Unlimited Email Invitations
+										</li>
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-heart"></span> Fantastic Support
+										</li>
+								</ul>
+								<div class="panel-footer"> <a class="btn btn-lg btn-block btn-danger" href="#">CHECK BLOG</a> </div>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="panel panel-info">
+								<div class="panel-heading">
+										<h3 class="text-center">BUDGET BLOGS</h3>
+										<p class="text-center">Budget is your problem? </p>
+								</div>
+
+								<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-calendar"></span> Unlimited Events
+										</li>
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-envelope"></span> Unlimited Email Invitations
+										</li>
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-heart"></span> Fantastic Support
+										</li>
+								</ul>
+								<div class="panel-footer"> <a class="btn btn-lg btn-block btn-danger" href="#">CHECK BLOG</a> </div>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="panel panel-success">
+								<div class="panel-heading">
+										<h3 class="text-center">INNOVATION</h3>
+										<p class="text-center">Dont be shocked at this innovation!</p>
+								</div>
+
+								<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-calendar"></span> Unlimited Events
+										</li>
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-envelope"></span> Unlimited Email Invitations
+										</li>
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-heart"></span> Fantastic Support
+										</li>
+								</ul>
+								<div class="panel-footer"> <a class="btn btn-lg btn-block btn-danger" href="#">CHECK BLOG</a> </div>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="panel panel-warning">
+								<div class="panel-heading">
+										<h3 class="text-center">TASTE IT!</h3>
+										<p class="text-center">Gourmet food around thw world</p>
+								</div>
+
+								<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-calendar"></span> Unlimited Events
+										</li>
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-envelope"></span> Unlimited Email Invitations
+										</li>
+										<li class="list-group-item">
+												<span class="glyphicon glyphicon-heart"></span> Fantastic Support
+										</li>
+								</ul>
+								<div class="panel-footer"> <a class="btn btn-lg btn-block btn-danger" href="#">CHECK BLOG</a> </div>
+						</div>
+				</div>
+		</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-7 col-sm-offset-1">
+		<div class="blogs">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Budget Bytes</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Budget</span></h5><br>
+      <p>Broke Ass Gourmet‘s been around since 2009, for good reason. The recipes are exciting but accessible, and they’re all under $20. It’s also another blog-turned-cookbook. With collections like “5 Cheap And Easy Ways To Cook Chicken Legs“ and individual recipes like Sweet Potato Nachos, Homemade English Muffins and Bangkok Style Deviled Eggs, BrokeAss Gourmet’s recipes run the gamut. It also features a good amount of Jewish-inspired recipes, like Honey Whole-Wheat Challah and Salted Matzo Crack. If you’re looking for something special and want to keep it under $20, BrokeAss Gourmet is your one stop shop..</p>
+      <br><br>
+	  </div>
+	  </div>
+
+	  <div class="col-sm-3 col-sm-offset-1" style="margin-top:30px;">
+		<div class="hovereffect">
+						<img src="images/p5.jpg" >
+							<div class="overlay">
+							   <h2>Hover effect 3</h2>
+								<a class="info" href="#">link here</a>
+							</div>
+
+						</div>
+				</div>
+ <div class="col-sm-7 col-sm-offset-1">
+      <div class="blogs">
+	  <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>BrokeAss Gourmet</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-danger">Food</span><span class="label label-success">Taste</span></h5><br>
+      <p>Didn’t we say eating on a budget doesn’t have to be boring? These Parmesan Garlic Pretzel Bites from Budget Bytes are here to back us up. Budget Bytes is one of the great ones. It’s so great, in fact, it’s been turned into a cookbook, which, among many recipes, features a great guide for stocking your kitchen — perhaps the most crucial step of committing to cooking on a budget. Once you’re prepared, it’ll be easy to follow awesome recipes, like Budget Byte’s Parsley Salad With Almonds And Apricots or Easy Sesame Chicken..</p>
+      <hr>
+	  </div>
+	  </div>
+
+	  <div class="col-sm-3 col-sm-offset-1" style="margin-top:30px;">
+		<div class="hovereffect">
+						<img src="images/p5.jpg" >
+							<div class="overlay">
+							   <h2>Hover effect 3</h2>
+								<a class="info" href="#">link here</a>
+							</div>
+
+						</div>
+				</div>
+
+
+<div class="col-sm-7 col-sm-offset-1">
+      <div class="blogs">
+	  <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Not Eating Out In Boston</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-danger">Food</span><span class="label label-success">Taste</span></h5><br>
+      <p>Cathy Erway started her blog Not Eating Out In New York after “going AWOL from eating restaurant, take-out, or street stand food throughout the five boroughs of New York City” from 2006 to 2008. Her blog, which turned into her book, “The Art of Eating In,” features recipes that she thinks are worth skipping the NYC restaurant scene and eating in for. In other words, they’re pretty darn good. Recipes like Grilled Steak “Shoulder Bites” with Chimichurri and Roasted Eggplant “Salsa” and Curried Carrot Soup with Red Lentils strike a good balance between sophisticated and homey.</p>
+      <hr>
+	  </div>
+	  </div>
+
+	  <div class="col-sm-3 col-sm-offset-1" style="margin-top:30px;">
+		<div class="hovereffect">
+						<img src="images/p5.jpg" >
+							<div class="overlay">
+							   <h2>Hover effect 3</h2>
+								<a class="info" href="#">link here</a>
+							</div>
+
+						</div>
+				</div>
+
+<div class="col-sm-7 col-sm-offset-1" >
+      <div class="blogs">
+	  <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>The Law Student’s Wife</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-danger">Food</span><span class="label label-success">Taste</span></h5><br>
+      <p>The Law Student’s Wife offers budget-friendly, straightforward but exciting and often seasonal recipes like Balsamic Brussels Sprouts with Maple, Walnuts and Feta and Maple Roasted Butternut Squash Freekeh Salad With Kale. It’s a reliable spot for weeknight dinners, and blogger Erin also makes great desserts too, like Rhubarb Swirl Buttermilk Ice Cream and Brown Butter Churro Crispy Treats.</p>
+      <hr>
+	  </div>
+	  </div>
+
+	  <div class="col-sm-3 col-sm-offset-1" style="margin-top:30px;">
+		<div class="hovereffect">
+						<img src="images/p5.jpg" >
+							<div class="overlay">
+							   <h2>Hover effect 3</h2>
+								<a class="info" href="#">link here</a>
+							</div>
+
+						</div>
+				</div>
+
+<div class="col-sm-7 col-sm-offset-1">
+      <div class="blogs">
+	  <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>The 99 Cent Chef</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-danger">Food</span><span class="label label-success">Taste</span></h5><br>
+      <p>The 99 Cent Chef may not look as pretty as some of the other blogs, but what it lacks in glossy photos it makes up for in useful GIFs and videos. Blogger Billy Vasquez has a great sense of humor — he says he “takes the haute out of cuisine” — and makes eating on a budget fun and entertaining. His recipes consist of ingredients that either cost 99 cents each or 99 cents per pound. They range from spruced up breakfasts like Fried Egg on Breadcrumbs with Asparagus and classics like Patty Melts and Fish and Chips, to homemade versions of store-bought foods like Roasted Creamed Corn and even Egg McMuffins. He’s also a big fan of seasonal produce as a means of budgeting as well as adding flavor.</p>
+      <hr>
+	  </div>
+	  </div>
+
+	  <div class="col-sm-3 col-sm-offset-1" style="margin-top:30px;">
+		<div class="hovereffect">
+						<img src="images/p5.jpg" >
+							<div class="overlay">
+							   <h2>Hover effect 3</h2>
+								<a class="info" href="#">link here</a>
+							</div>
+
+						</div>
+				</div>
+
+<div class="col-sm-7 col-sm-offset-1">
+      <div class="blogs">
+	  <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>$5 Dinners</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-danger">Food</span><span class="label label-success">Taste</span></h5><br>
+      <p>The title of this blog says it all — and what could be better? $5 Dinners brings you recipes and weekly meal plans for making dinners that cost $5 or less. Blogger Erin Chase doesn’t stop at dinner, however. She shares great breakfast recipes, like Blueberry Lemon Pancakes and Berry Quinoa Parfaits, and healthy desserts, like Black Bean Brownies With Shredded Coconut And Chocolate Chips. Chase also offers cooking tutorials that explain techniques like how to shred cabbage, and how to choose and cut and avocado, making her blog great for new cooks.</p>
+      <hr>
+	  </div>
+	  </div>
+
+<div class="col-sm-3 col-sm-offset-1" style="margin-top:30px;">
+		<div class="hovereffect">
+						<img src="images/p5.jpg" >
+							<div class="overlay">
+							   <h2>Hover effect 3</h2>
+								<a class="info" href="#">link here</a>
+							</div>
+
+						</div>
+				</div>
+
+
+
+				</div>
+
+      <!--<h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
+
+      <p><span class="badge">2</span> Comments:</p><br> -->
+  </div>
+
+    <!--</div>-->
+
+<!--<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>-->
+
+
+</body>
+</html>

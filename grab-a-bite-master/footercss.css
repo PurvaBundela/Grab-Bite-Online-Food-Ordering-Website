@@ -1,0 +1,38 @@
+#fh5co-footer {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 7em 0;
+  z-index: 1;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 768px) {
+  #fh5co-footer {
+    padding: 5em 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-footer {
+    height: inherit;
+    position: relative;
+  }
+}
+#fh5co-footer {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#fh5co-footer {
+  z-index: 2;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-footer{
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
